@@ -80,7 +80,7 @@ for i = 1:N
     end
 end
 ```
-2. We trim the cropped patches to 100N x 100N
+2. We trim the cropped patches to 100N x 100N:
 ```Matlab
 %% Trim
 clc;
@@ -108,7 +108,6 @@ for i = 1:N
     imwrite(I(1:W, 1:H, :), src_new_filename);
 end
 ```
-
 
 ### Loss Function :
 Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in this competition:
