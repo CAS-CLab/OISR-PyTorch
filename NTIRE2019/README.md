@@ -111,6 +111,10 @@ for i = 1:N
 end
 ```
 
+### Pre-trained models :
+* [Baidu Pan]()
+* [OneDrive]()
+
 ### Loss Function :
 Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in this competition:
 
@@ -120,10 +124,8 @@ Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in thi
 
 ### Representative images :
 * LR:
-![](./OISR_AC.jpg)
+<img src="./LR/cam1_04.png" width="400" height="400" />
 * SR:
-![](./OISR_AC.jpg)
+<img src="./LR/cam1_04.png" width="400" height="400" />
 
-### Pre-trained models :
-* [Baidu Pan]()
-* [OneDrive]()
+
