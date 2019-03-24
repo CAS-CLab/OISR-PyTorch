@@ -11,32 +11,29 @@ The PyTorch4.0.1 implementation of our NTIRE2019 model. Unfortunately, this mode
 * tqdm
 
 ### How to use ?
-1. Download the pre-processed training and validation sets from [here](https://pan.baidu.com/s/1vG95V0g08lCnQ5K6EzhVUg) with code `eo20`.
+1. Download the pre-processed training and validation sets from [Baidu Cloud](https://pan.baidu.com/s/1wU6EWMUbAgasJVBGjxTa0w) with code `ij6f` or from [OneDrive]().
 2. Unzip images to the given folders:
 ```shell
-unzip ./train_HR.zip -d /your/NTIRE2019/data/DIV2K/DIV2K_train_HR/
-unzip ./train_LR.zip -d /your/NTIRE2019/data/DIV2K/DIV2K_train_LR_bicubic/
-unzip ./val_LR.zip -d /your/NTIRE2019/data/DIV2K/DIV2K_test_LR_bicubic/
-unzip ./val_LR.zip -d /your/NTIRE2019/data/DIV2K/DIV2K_train_LR_bicubic/
-unzip ./val_HR.zip -d /your/NTIRE2019/data/DIV2K/DIV2K_train_HR/
+unzip /your/download/data.zip -d /your/NTIRE2019/
 ```
 3. Training from scratch:
 ```shell
 cd /your/NTIRE2019/OISR/src
 bash train.sh
 ```
-4. Evaluation on validation set:
+4. Fine-tuning on patches, download the pre-processed training patches and validation sets from [Baidu Cloud](https://pan.baidu.com/s/1y5FQMYe96hqiuv3a0KTvZQ) with code `mu0a` or from [OneDrive]():
 ```shell
-cd /your/NTIRE2019/OISR/src
+cd /your/NTIRE2019/
+unzip /your/download/data2.zip -d /your/NTIRE2019/
+cd ./OISR/src/
 cp ../experiment/OISR/model/model_best.pt ./
-bash val.sh
+bash train2.sh
 ```
-5. Evaluation on test set:
+5. Evaluation on test set, download `Test_LR.zip` from NTIRE2019:
 ```shell
-# Download Test_LR.zip somewhere
-zip ./Test_LR.zip -d /your/NTIRE2019/data/benckmark/B100/HR/
-python test_images_rename.py
+zip /your/download/Test_LR.zip -d /your/NTIRE2019/data/benckmark/B100/HR/
 cd /your/NTIRE2019/OISR/src
+python test_images_rename.py
 cp ../experiment/OISR/model/model_best.pt ./ # or move the pre-trained model to ./
 bash test.sh
 python test_SRimages_rename.py # SR images can be found in ../experiment/test/results-B100
