@@ -37,6 +37,9 @@ bash test.sh
 python test_SRimages_rename.py # SR images can be found in ../experiment/test/results-B100
 ```
 
+### Model Structure:
+![](/figs/main.png)
+
 ### Pre-trained models:
 [Baidu Pan]()
 [OneDrive]()
