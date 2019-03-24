@@ -42,7 +42,7 @@ python test_SRimages_rename.py # SR images can be found in ../experiment/test/re
 In this case, we apply the channel attention module (similar to SE/CBAM) to the RK-3 block.
 
 ### Image Preprocessing :
-We use the following MatLab script to create patches:
+1. We use the following MatLab script to create patches:
 ```matlab
 %% LR images augment
 % NOTE THAT : The GT/LR pair should have the same filename.
@@ -80,7 +80,34 @@ for i = 1:N
     end
 end
 ```
+2. We refine the cropped patches to 100N x 100N
+```Matlab
+%% Trim
+clc;
+clear;
+%%
+target_dir_LR = './new_LR';
+target_dir_HR = './new_GT';
+src_filenames = dir(fullfile(target_dir_LR, '*.png'));
 
+N = length(src_filenames);
+
+for i = 1:N
+    I = imread([target_dir_LR, '/', src_filenames(i).name]);
+    src_new_filename = [target_dir_LR, '/', src_filenames(i).name];
+    [W, H, ~] = size(I);
+    W = W - mod(W, 100);
+    H = H - mod(H, 100);
+    imwrite(I(1:W, 1:H, :), src_new_filename);
+    
+    I = imread([target_dir_HR, '/', src_filenames(i).name]);
+    src_new_filename = [target_dir_HR, '/', src_filenames(i).name];
+    [W, H, ~] = size(I);
+    W = W - mod(W, 100);
+    H = H - mod(H, 100);
+    imwrite(I(1:W, 1:H, :), src_new_filename);
+end
+```
 
 
 ### Loss Function :
