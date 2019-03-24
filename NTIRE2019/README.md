@@ -38,7 +38,7 @@ python test_SRimages_rename.py # SR images can be found in ../experiment/test/re
 ```
 
 ### Model Structure:
-![](/figs/main.png)
+![](./OISR_AC.jpg)
 
 ### Pre-trained models:
 [Baidu Pan]()
