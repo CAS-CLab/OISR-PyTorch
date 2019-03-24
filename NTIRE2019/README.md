@@ -112,7 +112,7 @@ end
 ```
 
 ### Pre-trained models :
-* [Baidu Pan]()
+* [Baidu Pan](https://pan.baidu.com/s/1vIp8JZAc_vyK7a7rdO029A) with code `7l6x`
 * [OneDrive]()
 
 ### Loss Function :
