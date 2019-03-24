@@ -37,10 +37,16 @@ bash test.sh
 python test_SRimages_rename.py # SR images can be found in ../experiment/test/results-B100
 ```
 
-### Model Structure:
+### Model Structure :
 ![](./OISR_AC.jpg)
 In this case, we apply the channel attention module (similar to SE/CBAM) to the RK-3 block.
 
-### Pre-trained models:
+### Loss Function :
+We use smooth L1 loss in this competition:
+
+![equation](http://latex.codecogs.com/gif.latex?z_{i}=0.5(x_i-y_i)^2,&\text{if}|x_i-y_i|<1)
+
+![equation](http://latex.codecogs.com/gif.latex?z_{i}=|x_i-y_i|-0.5,&\text{otherwise})
+### Pre-trained models :
 [Baidu Pan]()
 [OneDrive]()
