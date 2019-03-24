@@ -23,17 +23,15 @@ bash train.sh
 ```
 4. Fine-tuning on patches, download the pre-processed training patches and validation sets from [Baidu Cloud](https://pan.baidu.com/s/1y5FQMYe96hqiuv3a0KTvZQ) with code `mu0a` or from [OneDrive](https://1drv.ms/u/s!Av1MQK8mV3J8gmtownoDhLJBwHy5):
 ```shell
-cd /your/NTIRE2019/
 unzip /your/download/data2.zip -d /your/NTIRE2019/
-cd ./OISR/src/
+cd /your/NTIRE2019/OISR/src/
 cp ../experiment/OISR/model/model_best.pt ./
 bash train2.sh
 ```
-5. Evaluation on test set, download `Test_LR.zip` from NTIRE2019:
+5. Evaluation on test set, download `Test_LR.zip` from [Baidu Cloud](https://pan.baidu.com/s/1-eQFiO-nj5btDI8ym7yWbA) with code `fwnh` or from [OneDrive]():
 ```shell
-zip /your/download/Test_LR.zip -d /your/NTIRE2019/data/benckmark/B100/HR/
+zip /your/download/Test_LR.zip -d /your/NTIRE2019/data/benckmark/B100/
 cd /your/NTIRE2019/OISR/src
-python test_images_rename.py
 cp ../experiment/OISR/model/model_best.pt ./ # or move the pre-trained model to ./
 bash test.sh
 python test_SRimages_rename.py # SR images can be found in ../experiment/test/results-B100
