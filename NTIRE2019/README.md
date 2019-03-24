@@ -41,6 +41,48 @@ python test_SRimages_rename.py # SR images can be found in ../experiment/test/re
 ![](./OISR_AC.jpg)
 In this case, we apply the channel attention module (similar to SE/CBAM) to the RK-3 block.
 
+### Image Pre-processed :
+We use the following MatLab script to create patches:
+```matlab
+%% LR images augment
+% NOTE THAT : The GT/LR pair should have the same filename.
+clc;
+clear;
+%%
+% src_dir = './HR';
+src_dir_LR = './LR';
+target_dir_LR = './new_LR';
+src_dir_HR = './GT';
+target_dir_HR = './new_GT';
+src_filenames = dir(fullfile(src_dir_LR, '*.png'));
+
+N = length(src_filenames);
+
+for i = 1:N
+    try
+        I = imread([src_dir_LR, '/', src_filenames(i).name]);
+        src_new_filename = [target_dir_LR, '/', src_filenames(i).name];
+        degree = randi(360);
+        degree = (degree - mod(degree, 90)); % comment this line to create more challenging patches
+        J = imrotate(I, degree, 'bicubic', 'crop');
+        [~, rect] = imcrop(J);
+        rect = round(rect);
+        J = imcrop(J, rect);
+        imwrite(J, src_new_filename);
+
+        I = imread([src_dir_HR, '/', src_filenames(i).name]);
+        src_new_filename = [target_dir_HR, '/', src_filenames(i).name];
+        J = imrotate(I, degree, 'bicubic', 'crop');
+        J = imcrop(J, rect);
+        imwrite(J, src_new_filename);
+    catch
+        disp('skip.');
+    end
+end
+```
+
+
+
 ### Loss Function :
 Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in this competition:
 
