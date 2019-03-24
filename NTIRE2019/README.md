@@ -80,7 +80,7 @@ for i = 1:N
     end
 end
 ```
-2. We refine the cropped patches to 100N x 100N
+2. We trim the cropped patches to 100N x 100N
 ```Matlab
 %% Trim
 clc;
