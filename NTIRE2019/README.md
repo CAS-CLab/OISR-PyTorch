@@ -28,7 +28,7 @@ cd /your/NTIRE2019/OISR/src/
 cp ../experiment/OISR/model/model_best.pt ./
 bash train2.sh
 ```
-5. Evaluation on test set, download `Test_LR.zip` from [Baidu Cloud](https://pan.baidu.com/s/1-eQFiO-nj5btDI8ym7yWbA) with code `fwnh` or from [OneDrive]():
+5. Evaluation on test set, download `Test_LR.zip` from [Baidu Cloud](https://pan.baidu.com/s/1-eQFiO-nj5btDI8ym7yWbA) with code `fwnh` or from [OneDrive](https://1drv.ms/u/s!Av1MQK8mV3J8gm2Xko-mFzwgRVIo):
 ```shell
 zip /your/download/Test_LR.zip -d /your/NTIRE2019/data/benckmark/B100/
 cd /your/NTIRE2019/OISR/src
