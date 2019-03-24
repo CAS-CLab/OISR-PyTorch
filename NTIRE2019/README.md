@@ -39,6 +39,7 @@ python test_SRimages_rename.py # SR images can be found in ../experiment/test/re
 
 ### Model Structure:
 ![](./OISR_AC.jpg)
+In this case, we apply the channel attention module (similar to SE/CBAM) to the RK-3 block.
 
 ### Pre-trained models:
 [Baidu Pan]()
