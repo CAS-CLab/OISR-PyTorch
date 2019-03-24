@@ -116,6 +116,11 @@ Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in thi
 
 ![equation](http://latex.codecogs.com/gif.latex?z_{i}=|x_i-y_i|-0.5,&\text{otherwise})
 
+### Representative images :
+* LR:
+![](./OISR_AC.jpg)
+* SR:
+![](./OISR_AC.jpg)
 
 ### Pre-trained models :
 * [Baidu Pan]()
