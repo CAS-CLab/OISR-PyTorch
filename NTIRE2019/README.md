@@ -127,6 +127,6 @@ Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in thi
 <img src="./LR/cam1_04.png" width="400" height="400" />
 
 * SR:
-<img src="./LR/cam1_04.png" width="400" height="400" />
+<img src="./SR/cam1_04_x1_SR.png" width="400" height="400" />
 
 
