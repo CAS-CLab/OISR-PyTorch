@@ -1,5 +1,5 @@
 # OISR+CA : an example of OISR with attention
-The PyTorch4.0.1 implementation of our NTIRE2019 model. Unfortunately, this model performs poorly on the real single-image super-resolution problem due to the gap between bicubic-downsampling and this new challenge. Hopefully, OISR modules can be used in the winner models of this competition to further improve the state-of-the-arts.
+The PyTorch4.0.1 implementation of our [NTIRE2019](https://competitions.codalab.org/competitions/21439) model. Unfortunately, this model performs poorly on the real single-image super-resolution problem due to the gap between bicubic-downsampling and this new challenge. Hopefully, OISR modules can be used in the winner models of this competition to further improve the state-of-the-arts.
 
 ### Dependencies :
 * Python 3.7
