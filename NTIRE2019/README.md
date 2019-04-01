@@ -1,5 +1,5 @@
-# OISR+CA : an example of OISR with attention
-The PyTorch4.0.1 implementation of our [NTIRE2019](https://competitions.codalab.org/competitions/21439) model. Unfortunately, this model performs poorly on the real single-image super-resolution problem due to the gap between bicubic-downsampling and this new challenge. Hopefully, OISR modules can be used in the winner models of this competition to further improve the state-of-the-arts.
+# OISR+CA : a toy example of OISR with attention
+The PyTorch4.0.1 implementation of our [NTIRE2019](https://competitions.codalab.org/competitions/21439) model. Unfortunately, this model performs poorly on the real single-image super-resolution problem. It may be caused by the gap between bicubic-downsampling and this new challenge, or the poor network design, e.g., where to add the attention module (the performance of this network on benckmark datasets will be reported soon). Hopefully, OISR modules can be used in the winner models of this competition to further improve the state-of-the-arts.
 
 ### Dependencies :
 * Python 3.7
@@ -129,4 +129,8 @@ Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in thi
 * SR:
 <img src="./SR/cam1_04_x1_SR.png" width="400" height="400" />
 
+* LR:
+<img src="./LR/cam1_09.png" width="400" height="400" />
 
+* SR:
+<img src="./SR/cam1_09.png" width="400" height="400" />
