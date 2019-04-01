@@ -11,7 +11,7 @@ The PyTorch4.0.1 implementation of our [NTIRE2019](https://competitions.codalab.
 * tqdm
 
 ### How to use ?
-1. Download the pre-processed training and validation sets from [Baidu Cloud](https://pan.baidu.com/s/1wU6EWMUbAgasJVBGjxTa0w) with code `ij6f` or from [OneDrive](https://1drv.ms/u/s!Av1MQK8mV3J8gmz3FKBlKa1SZ3BY).
+1. Download the pre-processed training and validation sets from [Baidu Cloud](https://pan.baidu.com/s/1r1dtyqZo12FrVaJSTV4_7w) with code `fb0z` or from [OneDrive](https://1drv.ms/u/s!Av1MQK8mV3J8gmz3FKBlKa1SZ3BY).
 2. Unzip images to the given folders:
 ```shell
 unzip /your/download/data.zip -d /your/NTIRE2019/
