@@ -1,6 +1,8 @@
 # OISR+CA : a toy example of OISR with attention
 The PyTorch4.0.1 implementation of our [NTIRE2019](https://competitions.codalab.org/competitions/21439) model. Unfortunately, this model performs poorly on the real single-image super-resolution problem. It may be caused by the gap between bicubic-downsampling and this new challenge, or the poor network design, e.g., where to add the attention module (the performance of this network on benckmark datasets will be reported soon). Hopefully, OISR modules can be used in the winner models of this competition to further improve the state-of-the-arts.
 
+> Since we just sent our FACT_SHEETs to one of the organizer (should be sent to all of them), our submission has been regarded as an invalid result. You may not directly compare our model with other participants on PSNR and SSIM. Sorry for the inconvenience. :(
+
 ### Dependencies :
 * Python 3.7
 * PyTorch >= 0.4.0
