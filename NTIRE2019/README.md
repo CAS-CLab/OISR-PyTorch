@@ -157,7 +157,7 @@ Inspired by the `smoothL1loss` in object detection, we use smooth L1 loss in thi
 
 ### Results on benchmark datasets (PSNR) :
 
-model | Param | Set5 | Set14 | B100 | Urban100 
+model (2x) | Param | Set5 | Set14 | B100 | Urban100 
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 OISR-NTIRE19 | 58M | 38.21 | 33.94 | 32.31 | 32.75
 OISR-RK3 | 42M | 38.21 | 33.94 | 32.36 | 33.03
