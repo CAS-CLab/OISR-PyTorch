@@ -61,7 +61,7 @@ We admit that the ODE-inspired network design remains experimental, so far it ju
 
 2. More diverse comparative experiments should be involved, since there are many numerical ODE methods.
 
-Due to the limited computing resources, we only evaluate a few network structures at the present time. **It is possible that there exists another better architecture, or, more likely, many attempts may not even converge**. Note that we only focus on the **order** of numerical ODE methods intuitively. It is only one of the central concepts in numerical analysis (also includes convergence and stability). To the best of our knowledge, there is no correspondence **strictly** between numerical ODEs and deep neural networks in numerical analysis. Utlizing convergence, consistency and order, and stability and stiffness may further explain the emprical success of  the existing methods.  
+Due to the limited computing resources, we only evaluate a few network structures at the present time. **It is possible that there exists another better architecture, or, more likely, many attempts may not even converge**. Note that we only focus on the **order** of numerical ODE methods intuitively. It is only one of the central concepts in numerical analysis (also includes convergence and stability). To the best of our knowledge, there is no correspondence **strictly** between numerical ODEs and deep neural networks in numerical analysis, but utlizing convergence, consistency and order, and stability and stiffness may further explain the emprical success of the existing methods and the potential failures.  
 
 
 ### References : 
