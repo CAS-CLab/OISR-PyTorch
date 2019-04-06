@@ -29,22 +29,22 @@ We report the 4x PSNR(dB) results on benckmark datasets.
 
 ### Representative images (4x) :
 * LR
-<img src="./img/LR_1.png" width="512" height="382" />
+<img src="./img/LR_1.png" width="341" height="255" />
 
 * OISR-RK3
-<img src="./img/RK3_1.png" width="512" height="382" />
+<img src="./img/RK3_1.png" width="341" height="255" />
 
 * LR
-<img src="./img/LR_2.png" width="512" height="340" />
+<img src="./img/LR_2.png" width="341" height="255" />
 
 * OISR-RK3
-<img src="./img/RK3_2.png" width="512" height="340" />
+<img src="./img/RK3_2.png" width="341" height="255" />
 
 * LR
-<img src="./img/LR_3.png" width="512" height="340" />
+<img src="./img/LR_3.png" width="341" height="255" />
 
 * OISR-RK3
-<img src="./img/RK3_3.png" width="512" height="340" />
+<img src="./img/RK3_3.png" width="341" height="255" />
 
 * Urban100
 ![](./img/Urban100.png)
@@ -53,6 +53,16 @@ We report the 4x PSNR(dB) results on benckmark datasets.
 ![](./img/B100.png)
 
 You can download some results from [here](https://1drv.ms/u/s!Av1MQK8mV3J8gng54ftWgdCT1i7C). This link contains RK3-x3/x4 Urban100 and B100 results. You can easily generate result images with `test.sh` scripts.
+
+### Q&A :
+1. The improvement of OISR is limited, compared with NTIRE2018 top rankers.
+
+We admit that the ODE-inspired network design remains experimental, so far it just gives us a different point of view to understand SR problems. It could be a new direction and deserves more attentions of the community (e.g., [Neural Ordinary Differential Equations](https://arxiv.org/abs/1806.07366) in [NeurIPS2018](https://neurips.cc/Conferences/2018/Awards) is encouraging).
+
+2. More diverse comparative experiments should be involved, since there are many numerical ODE methods.
+
+Due to the limited computing resources, we only evaluate a few network structures at the present time. **It is possible that there exists another better architecture, or, more likely, many attempts may not even converge**. Note that we only focus on the **order** of numerical ODE methods intuitively. It is only one of the central concepts in numerical analysis (also includes convergence and stability). To the best of our knowledge, there is no correspondence **strictly** between numerical ODEs and deep neural networks in numerical analysis. Utlizing convergence, consistency and order, and stability and stiffness may further explain the emprical success of  the existing methods.  
+
 
 ### References : 
 ```
