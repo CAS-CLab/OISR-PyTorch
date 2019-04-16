@@ -52,7 +52,7 @@ We report the 4x PSNR(dB) results on benckmark datasets.
 * B100
 ![](./img/B100.png)
 
-You can download some results from [here](https://1drv.ms/u/s!Av1MQK8mV3J8gng54ftWgdCT1i7C). This link contains RK3-x3/x4 Urban100 and B100 results. You can easily generate result images with `test.sh` scripts.
+You can download some results from [here](https://1drv.ms/u/s!Av1MQK8mV3J8gng54ftWgdCT1i7C). This link contains RK3-x3/x4 Urban100 and B100 results. You can easily generate result images with `demo.sh` scripts.
 
 ### Q&A :
 1. The improvement of OISR is limited, compared with NTIRE2018 top rankers.
