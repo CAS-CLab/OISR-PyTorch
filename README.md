@@ -74,7 +74,7 @@ Due to the limited computing resources, we only evaluate a few network structure
   year      = {2017}
 }
 
-@article{OISR,
+@InProceedings{OISR,
   author    = {Xiangyu He and Zitao Mo and Peisong Wang and Yang Liu and Mingyuan Yang and Jian Cheng},
   title     = {ODE-inspired Network Design for Single Image Super-Resolution},
   booktitle = {2019 {IEEE} Conference on Computer Vision and Pattern Recognition},
